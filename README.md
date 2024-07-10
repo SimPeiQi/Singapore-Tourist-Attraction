@@ -6,9 +6,14 @@ Our team has chosen to focus on the theme of “Singapore Attractions.” Singap
 
 # Overall Team Contribution
 **Group work**: Homepage (index.html)
+
 **Wong Jia Yi**: Universal Studios Singapore (Universal_Studios_Singapore.html)	
+
 **Bernice Tan Xuan Rong**: Jewel (Jewel.html)	
+
 **Sim Pei Q**i: River Wonders (River Wonders.html)	
+
 **Teo Keng Hwee Sherywn**: Garden By the Bay (GBB.html)	
+
 **Claudio Tan Keng Hee**: Marina Bay Sands (claudioindex.html)
 
