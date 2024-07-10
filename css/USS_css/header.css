@@ -1,0 +1,236 @@
+﻿* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #221314;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 30px;
+  transition: ease 0.4s;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: ease 2s;
+}
+
+.navbar, .sticky .navbar {
+  display: flex;
+  justify-content:space-around;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+
+.navbar a:hover {
+  background: #fff;
+  color: #221314;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border-radius: 4px;
+  animation: rainbow-colors 5s linear alternate-reverse infinite;
+}
+
+.logo:hover {
+  animation: rainbow-colors 5s linear alternate-reverse infinite;
+}
+
+@keyframes rainbow-colors {
+  0% {
+    color: hsl(197, 97%, 66%, 1);
+  }
+
+  25% {
+    color: hsl(0, 100%, 100%, 1);
+  }
+
+  50% {
+    color: hsl(348, 83%, 81%, 1);
+  }
+
+  75% {
+    color: hsl(0.75turn, 90%, 65%);
+  }
+
+  100% {
+    color: hsl(1turn, 90%, 65%);
+  }
+}
+
+#menu-icon {
+  color: #fff;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 80px 18%;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("../../images/USS_images/universal-studios-singapore-kids-family-guide-honeykids-asia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-text h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  color: #000;
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  color: #ffffffbf;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+
+.home-btn {
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 30px;
+  background: #ffffffbf;
+  color: #6e54fa;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+
+.home-btn:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+header.sticky {
+  background: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.sticky .logo {
+  color: #221314;
+}
+.sticky .navbar{
+    display:flex;
+    justify-content:flex-start;
+}
+.sticky .navbar a {
+  color: #221314;
+}
+
+
+@media (max-width: 1040px) {
+  .main {
+    justify-content: flex-start;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .sticky #menu-icon {
+    color: #221314;
+  }
+
+  .home {
+    height: 88vh;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 270px;
+    height: 120vh;
+    background: #1067cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 30px;
+    transition: 0.5s all;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.2rem 0;
+  }
+
+  .sticky .navbar a {
+    color: #fff;
+  }
+
+  .navbar a:hover {
+    color: #221314;
+  }
+
+  .open {
+    right: 0;
+  }
+
+  .list {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .list {
+    width: 100%;
+  }
+
+  .subscribtion form {
+    width: 350px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .home {
+    height: 85vh;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 390px) {
+  .subscribtion form {
+    width: 90vw;
+  }
+}

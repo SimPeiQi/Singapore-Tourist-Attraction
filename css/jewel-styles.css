@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        color: var(--bg-color);
+        font-size: var(--p-font);
+        font-weight: 500;
+        padding: 10px 22px;
+        border-radius: 4px;
+        transition: ease .40s;
+    }
+
+        .navbar a:hover {
+            background: var(--bg-color);
+            color: var(--text-color);
+            box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+            border-radius: 4px;
+        }
+
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 80px 18%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://archello.s3.eu-central-1.amazonaws.com/images/2020/08/14/safdie-architects-jewel-changi-airport-airports-archello.1597386134.6611.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    color: #ffffffbf;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 black;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+
+.home-btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: #ffffffbf;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+    .home-btn:hover {
+        background: var(--bg-color);
+        transform: scale(1.1);
+    }
+
+header.sticky {
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33,35,38, 0.1) 0px 10px 10px -10px;
+}
+
+.sticky .logo {
+    color: var(--text-color);
+}
+
+.sticky .navbar a {
+    color: var(--text-color);
+}
+
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://archello.s3.eu-central-1.amazonaws.com/images/2020/08/14/safdie-architects-jewel-changi-airport-airports-archello.1597386134.6611.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://dollarsandsense.sg/wp-content/uploads/2019/06/darren-nunis-1550378-unsplash.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+/* table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.d-block {
+    display: block !important;
+}
+
+tr:hover {
+    background-color: lightgray;
+}
+
+
+/* Cards */
+/* Float three columns side by side */
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 30px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin: -5px 0 10px;
+        margin-left: 15px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+    }
+
+
+
+/* Filter Table */
+.search-input {
+    width: 300px;
+    margin-left: auto;
+    float: right;
+}
+
+/* Responsive navbar */
+@media (max-width: 1400px) {
+    header {
+        padding: 17px 3%;
+        transition: .2s;
+    }
+
+        header.sticky {
+            padding: 10px 3%;
+            transition: .2s;
+        }
+
+    section {
+        padding: 80px 3%;
+        transition: .2s;
+    }
+
+    :root {
+        --big-font: 4.5rem;
+        --h2-font: 2.3rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1040px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .sticky #menu-icon {
+        color: var(--text-color);
+    }
+
+    .home {
+        height: 88vh;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #e0c18b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+
+        .navbar a {
+            display: block;
+            margin: 1.2rem 0;
+        }
+
+    .sticky .navbar a {
+        color: var(--bg-color);
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+    }
+
+    .open {
+        right: 0;
+    }
+}
+
+/* Video */
+iframe {
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Contact */
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+    .form-container:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("https://wallpapercave.com/wp/wp4706693.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left {
+    background: url("https://wallpapercave.com/wp/wp4706693.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+    h2:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #2ecc71;
+    }
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .btn:hover {
+        background-color: #27ae60;
+    }
+
+.field:focus {
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 200px;
+    }
+}
+
+/* Load More button Modal Gallery */
+#loadmore-btn {
+    margin-right: 240px;
+    margin-top: 64px;
+}

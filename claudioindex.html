@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="claudiocss/styles.css" />
+    <script>
+        $(document).ready(function () {
+            $("#footer-link").load("claudiofooter.html")
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg" id="navigation">
+            <a class="navbar-brand" href="claudioindex.html">
+                <img src="images/logo.svg" class="logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudiodine.html">Dine in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudiothings.html">Things to do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudioBookingForm.html">Booking Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.marinabaysands.com/">Official Page</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div>
+            <video id="mbs" muted autoplay loop>
+                <source type="video/mp4" src="claudiovideos/mbsad.MP4" />
+            </video>
+            <div>
+                <span>|     Experience Excellence</span>
+            </div>
+            <h2>A Luxury Casino & Resort in the Heart of Singapore</h2>
+            <div id="desc">
+                Paradise in the little red dot. Welcome to a world of luxury. Welcome to Marina Bay Sands
+            </div>
+        </div>
+    </section>
+    <div id="space"></div>
+    <section>
+        <div class="title">
+            <h2>
+                <span id="phrase">Fun Facts about Marina Bay Sands (MBS)</span>
+            </h2>
+            <div id="desc2">
+                MBS began operations on 27 April 2010 with a phased opening, and officially opened on 23 June in the same year
+                MBS has been one of LVS’s most profitable properties.
+            </div>
+            <div id="space"></div>
+            <h2>
+                <span id="phrase">About Marina Bay Sands (MBS)</span>
+            </h2>
+            <div id="desc2">
+                Marina Bay Sands (MBS) is an integrated resort (IR) with a hotel,
+                casino, retail mall, as well as convention facilities and entertainment venues including theatres,
+                nightclubs and a museum. Sitting on a 570,000 sq m waterfront site at Marina Bay,
+                MBS is operated by Las Vegas Sands (LVS) Corp.
+            </div>
+        </div>
+    </section>
+    <div id="space"></div> <!--left here-->
+    <footer>
+        <div w3-include-html="claudiofooter.html" id="footer-link"></div>
+    </footer>
+    <p>Credits for all pages: MBS official page</p>
+</body>
+</html>

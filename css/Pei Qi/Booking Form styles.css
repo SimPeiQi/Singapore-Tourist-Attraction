@@ -1,0 +1,61 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../../images/Pei Qi/Background/underwaterbg.jpg");
+    color: black;
+}
+
+heading {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: solid black;
+    padding: 6px;
+}
+
+form {
+    width: 80%;
+    font-family: Arial; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 10px solid #629AEC;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C1D8ED;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin-left: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+bookingtxt {
+    color: red;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+page {
+    width: 10%;
+}
+
+fieldset {
+    border-radius: 10px;
+}

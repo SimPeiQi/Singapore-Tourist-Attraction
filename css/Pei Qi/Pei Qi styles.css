@@ -1,0 +1,101 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+    background-image: url("../../images/Pei Qi/Background/forestbg2.jpg");
+    background-blend-mode: screen;
+    color: black;
+}
+
+mark {
+    background-color: dodgerblue;
+    color: black;
+}
+
+img 
+{
+    width: 1000px;
+    height: 800px;
+}
+table 
+{
+    margin-left: 15px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+tr, th, td 
+{
+    height: 70px;
+    border: solid black;
+    padding: 6px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.carousel-inner img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.carousel-control-prev {
+    left: 5%;
+    filter: invert(0%);
+}
+
+.carousel-control-next {
+    right: 5%;
+    filter: invert(0%);
+}
+
+.section {
+    display: flex;
+}
+
+.section img{
+    width: 420px;
+    height: 300px;
+}
+
+.text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+h1, h2, h5 {
+    text-align: center;
+    background-color: darkcyan;
+    color: #860039;
+    padding: 0;
+    margin: 0;
+    
+}
+
+h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h4 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover{
+    color:purple;
+}

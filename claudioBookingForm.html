@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Claudio" />
+    <meta name="description" content="Booking Form" />
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="claudiocss/styles.css" />
+    <link rel="stylesheet" href="claudiocss/ClaudioBooking.css" />
+    <script src="claudiojs/Booking.js" defer></script>
+</head>
+<body onload="hideTotal()">
+    <div>
+        <nav class="navbar navbar-expand-lg" id="navigation">
+            <a class="navbar-brand" href="claudioindex.html">
+                <img src="claudioimages/logo.svg" class="logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudiodine.html">Dine in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudiothings.html">Things to do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claudioBookingForm.html">Booking Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.marinabaysands.com/">Official Page</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <form id="bookingform" onsubmit="submitForm(); return false">
+        <h1>Booking Form</h1>
+        <label>&nbsp;&nbsp;Quantity:</label>
+        <input id="quantity" name="quatity" type="number" min="1" value="0" onchange="calculateTotal()">
+        <p>
+            <fieldset name="Attractions">
+                <legend>Attractions:</legend>
+                <input type="radio" name="attraction" id="attraction" value="skypark" onclick="calculateTotal()" checked required> Skypark Observation Deck
+                <input type="radio" name="attraction" id="attraction" value="artscience" onclick="calculateTotal()"> Artscience Museum
+                <input type="radio" name="attraction" id="attraction" value="sampan" onclick="calculateTotal()"> Sampan Rides
+            </fieldset>
+            <div id="totalPrice"></div>
+        <p>
+            <fieldset name="Deliver to">
+                <legend>Deliver to:</legend>
+                <label for="iName">Name:</label>
+                <input id="iName" name="Name" type="text" autocomplete="Name" required />
+                <br /><br />
+                <label for="iAddress">Address:</label>
+                <textarea id="iAddress" rows="2" cols="30" name="Address" autocomplete="on" required></textarea>
+                <label for="iPostalCode">Postal Code:</label>
+                <input id="iPostalCode" type="text" maxlength="6" size="6" name="PostalCode" required pattern="\d{6}" />
+                <br /><br />
+                <label for="iTelephone">Phone #:</label>
+                <input type="tel" id="iTelephone" name="Phone" size="8" pattern="[689]\d{7}" required />
+                <br /><br />
+                <label for="iEmail">Email:</label>
+                <input type="email" id="iEmail" name="Email" size="50" placeholder="Enter email addresses" required />
+                <br /><br />
+                <label for="iDate">Date:</label>
+                <input type="date" id="iDate" name="Date" required />
+                <label for="iTime">Time:</label>
+                <input type="time" id="iTime" name="Time" value="10:00" min="10:00" max="22:00" step="900" required />
+                <br />
+            </fieldset>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset" onclick="resetForm()" />
+        </p>
+        <p id="finalMessage"></p>
+    </form>
+    <div id="space"></div> <!--left here-->
+</body>
+
+</html>

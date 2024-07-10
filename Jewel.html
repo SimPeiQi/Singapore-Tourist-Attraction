@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Changi Jewel</title>
+    <meta name="author" content="Bernice Tan Xuan Rong" />
+    <meta name="description" content="Jewel Changi Airport" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <link rel="stylesheet" href="css/jewel-styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Javascript -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Changi </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!--Home section--->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Jewel <br />Changi Airport</h1>
+            <p>Discover a wondrous world, <br />where nature meets retail.</p>
+            <a href="https://www.jewelchangiairport.com/en.html" class="home-btn">Let's go now</a>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <div class="w3-content w3-container w3-padding-64" id="featured">
+        <h3 class="w3-center">Featured</h3>
+        <p class="w3-center"><em>Here are some of the latest events and promotions.<br> Hover over the images to see effect</em></p><br>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="images/Bernice/Jewel CNY Fair.jpg" alt="Avatar">
+                    <h3>Chinese New Year Fair at B1 Atrium</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/Bernice/EarlyPerks.jpg" alt="Early Check In Promo">
+                    <h3>Early Check-In Perks</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/Bernice/FreeParking.jpg" alt="car promo">
+                    <h3>2-Hour Free Weekday (Mon - Thu) Parking Promotion</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Second Parallax Image with Attractions Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min" id="attractions">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">ATTRACTIONS</span>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!--Video-->
+    <div class="w3-content w3-container w3-padding-64" id="tour video">
+        <h3 class="w3-center">Tour Video</h3>
+        <p class="w3-center"><em>Check out an overview of all the attractions here!<br> Click on the images to make them bigger</em></p><br>
+        <div style="text-align:center;">
+            <iframe width="560" height="315" class="video"
+                    src="https://www.youtube.com/embed/5Zn3RVBtwrU">
+            </iframe>
+        </div>
+    </div>
+    <!-- Container (Attractions Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Places to go</h3>
+        <p class="w3-center"><em>Explore a myriad of activities in this enchanting Jewel.<br> Click on the images to make them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="images/Bernice/JewelRassicQuest.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Embark on a thrilling adventure by teleporting 89 million years back to the Cretaceous period. Armed with a TimeLens, cadet rangers meet larger-than-life dinosaurs augmented against the lush greenery of the Shiseido Forest Valley and Canopy Park. Complete the mission and participate in activities and games while learning more about behemoth creatures!">
+                <p>Jewel-Rassic Quest</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/Waterfall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Step out of the airport right into a lush green sanctuary, a tranquil retreat in the core of the world's best transport hub. Immerse yourself in this garden wonderland and meet Singapore, the City in a Garden.
+
+
+
+Shiseido is the proud sponsor of the Shiseido Forest Valley. Experience the SENSE installation at the Shiseido Forest Valley’s west trail, with dancing lights illuminating the trees, soothing music playing in the background, and the signature scent of SHISEIDO Ultimune, your senses will be truly delighted. ">
+                <p>Shiseido Forest Valley</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/MirrorMaze.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Mirror Maze boasts a unique cover of greenery branching overhead, creating the illusion of endless bowers before you.">
+                <p>Mirror Maze</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/HedgeMaze.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Have a field day weaving your way through Singapore's largest hedge maze. Be rewarded with a bird's eye view of the maze's intricate windings when you reach the watch tower at its core.">
+                <p>Hedge Maze</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="images/Bernice/FoggyBowls.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Let your toddler slip in among puffs of cloud and hide away in gentle bowls of mist. Kids will love the chance to play in this dreamy setting and let their imagination take flight.">
+                <p>Foggy Bowls</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/WalkingNet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Suspended across a void, this is one walk you won't forget. A taut web 25 metres above ground affords an indescribable sensation of lightness.">
+                <p>Walking Net</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/BouncingNet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Experience the thrill of being almost weightless as you leap about this giant net! At its highest point at 8 metres above the ground, you'll feel like you can reach the sky.">
+                <p>Bouncing Net</p>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="images/Bernice/CanopyPark.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Canopy Park, located at the topmost level (L5) of Jewel, welcomes the young and young at heart with an array of exciting play attractions.
+
+
+From mazes to bouncing nets, it's all fun. Take a stroll along creative garden trails, glide down giant slides or hide in bowls of gentle mist. Spend hours at play, or simply relax at one of many charming diners.">
+                <p>Canopy Park</p>
+            </div>
+            <button class="w3-button w3-padding-large w3-light-grey" id="loadmore-btn" >LOAD MORE</button>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Attraction Details</h3>
+        <p class="w3-center"><em>Here are the details for the attractions shown above.<br> Filter your searches in the search bar and highlight text by hovering.</em></p>
+        <br /><br />
+        <div class="container">
+            <h3>
+                <input type="search" placeholder="Search..." class="form-control search-input" data-table="attractions-list" />
+            </h3>
+            <br />
+            <br />
+            <table class="attractions-list">
+                <tr>
+                    <th>Attraction</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Jewel-Rassic Quest</td>
+                    <td>
+                        Level 1 Concierge Counter
+                        <small class="d-block">
+                            10.30AM - 5.30PM
+                        </small>
+                    </td>
+                    <td>SGD 20</td>
+                </tr>
+                <tr>
+                    <td>Shiseido Forest Valley</td>
+                    <td>
+                        Entry and exit points between Level 1 to Level 4
+                        <small class="d-block">
+                            24 hours
+                        </small>
+                    </td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Mirror Maze</td>
+                    <td>
+                        Canopy Park (L5)
+                        <small class="d-block">
+                            10:00AM - 10:00PM
+                        </small>
+                    </td>
+                    <td>
+                        Adult - SGD 18.90
+                        <br>
+                        Child - SGD 13.90
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hedge Maze</td>
+                    <td>
+                        Canopy Park (L5)
+                        <small class="d-block">
+                            10:00AM - 10:00PM
+                        </small>
+                    </td>
+                    <td>
+                        Adult - SGD 13.90
+                        <br>
+                        Child - SGD 11.90
+                    </td>
+                </tr>
+                <tr>
+                    <td>Foggy Bowls</td>
+                    <td>
+                        Canopy Park (L5)
+                        <small class="d-block">
+                            Mon - Thu: 10:00AM - 10:00PM
+                            <br>
+                            Fri - Sun, Eve & PH: 10:00AM - 11:00PM
+                        </small>
+                    </td>
+                    <td>SGD 8</td>
+                </tr>
+                <tr>
+                    <td>Walking Net</td>
+                    <td>
+                        Canopy Park (L5)
+                        <small class="d-block">
+                            10:00AM - 10:00PM
+                        </small>
+                    </td>
+                    <td>
+                        Adult - SGD 18.90
+                        <br>
+                        Child - SGD 13.90
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bouncing Net</td>
+                    <td>
+                        Canopy Park (L5)
+                        <small class="d-block">
+                            10:00AM - 10:00PM
+                        </small>
+                    </td>
+                    <td>
+                        Adult - SGD 24.90
+                        <br>
+                        Child - SGD 19.90
+                    </td>
+                </tr>
+                <tr>
+                    <td>Canopy Park</td>
+                    <td>
+                        Level 5
+                        <small class="d-block">
+                            Mon - Thu: 10:00AM - 10:00PM
+                            <br>
+                            Fri - Sun, Eve & PH: 10:00AM - 11:00PM
+                        </small>
+                    </td>
+                    <td>SGD 8</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <!-- Contact Section -->
+    <div class="form-container" id="contact">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>CONTACT</h2>
+                <p class="w3-center w3-large">Lets get in touch. Send us a message:</p><br>
+                <form id="contact-form" onsubmit="thankyouMsg()">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p><br>
+                    <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p><br>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p><br>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p><br>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Created by Bernice Tan Xuan Rong</p>
+    </footer>
+    <script src="js/jewel.js"></script>
+</body>
+</html>

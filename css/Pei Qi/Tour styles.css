@@ -1,0 +1,149 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+    background-image: url("../../images/Pei Qi/Background/underwaterbg.jpg");
+    background-blend-mode: screen;
+    color: black;
+}
+
+img {
+    width: 700px;
+    height: 600px;
+}
+
+.image {
+    width: 400px;
+    height: 300px;
+}
+
+.carousel-caption {
+    position: absolute;
+    margin:auto;
+    width: 700px;
+    height: 600px;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    font-family: 'Arial', sans-serifl;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.carousel-caption:hover {
+    opacity: 1;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.carousel-inner img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.carousel-control-prev {
+    left: 5%;
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    right: 5%;
+    filter: invert(100%);
+}
+
+.section {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.section img {
+    display: block;
+    margin-left: 50px;
+    margin-right: 10px;
+    width: 20%;
+    height: 10%;
+}
+
+text {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bgcolor {
+    text-align: center;
+    background-color: #49E6E1;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+a{
+    color: darkgreen;
+}
+
+#RG {
+    animation: fadeIn 4s;
+}
+
+#RC {
+    animation: fadeIn 4s;
+}
+
+#RN {
+    animation: fadeIn 4s;
+}
+
+#GR {
+    animation: fadeIn 4s;
+}
+
+#MR {
+    animation: fadeIn 4s;
+}
+
+#LM {
+    animation: fadeIn 4s;
+}
+
+#MeR {
+    animation: fadeIn 4s;
+}
+
+#YR {
+    animation: fadeIn 4s;
+}
+
+#GPF {
+    animation: fadeIn 4s;
+}
+
+#AR {
+    animation: fadeIn 4s;
+}
+
+#AFF {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

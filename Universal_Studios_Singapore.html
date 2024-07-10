@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wong Jia Yi" />
+    <meta name="description" content="Universal Studios Singapore" />
+    <title>Univeral Studios Singapore</title>
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="css/USS_css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a63376e838.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header--->
+    <div id="header-link"></div>
+
+    <!--Addition of Video (With texts)-->
+    <section data-aos="fade-up" data-aos-duration="2000" class="video-uss" id="vid-sect">
+        <div class="text">
+            <h2>Our Video</h2>
+            <div class="video-container">
+                <video id="video" width="600" autoplay controls loop muted>
+                    <source src="images/USS_images/USS_video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="infotext">
+                    <hr />
+                    Universal Studios Singapore is Southeast Asia’s first and only
+                    Universal Studios theme park. Immerse yourself in the storytelling
+                    of Hollywood. Be transported by adrenaline-pumping rides,
+                    interactive shows and a wide variety of exciting attractions based
+                    on the blockbuster movies and television series you know and love so
+                    well. Welcome in and enjoy the ride!
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Addition of Image Map w3schools (pixels)-->
+    <section data-aos="fade-up"
+             data-aos-duration="2000"
+             class="map-section"
+             id="map-section">
+        <div class="text">
+            <h2 class="map-title">Our Map</h2>
+            <p>
+                <a id="click" href="#map-section"><strong>Click</strong></a> onto the map to find out more about our zones!
+            </p>
+        </div>
+        <div class="map-container">
+            <img src="images/USS_images/uss_map.jpg" alt="USS Map" id="uss-map" usemap="#map-uss" />
+            <map name="map-uss" id="map-uss">
+                <area shape="poly"
+                      coords="582,530,622,539,661,542,648,562,643,562,681,641,694,641,702,659,703,677,688,677,670,679,659,708,608,738,559,713,557,678,488,667,482,672,468,668,468,651,482,636,501,629,506,616,515,605,533,605,552,575,537,573,537,565,545,548"
+                      href="USS_html/hollywood.html"
+                      target="_blank"
+                      alt="USS Map" />
+                <area shape="poly"
+                      coords="653,483,656,495,678,486,688,477,720,460,752,460,771,470,776,490,785,499,857,499,864,512,930,512,936,524,930,534,833,534,822,569,766,570,768,602,703,600,702,608,662,602,657,590,657,547,635,514,651,499,652,483"
+                      href="USS_html/newyork.html"
+                      target="_blank"
+                      alt="" />
+                <area shape="poly"
+                      coords="710,373,723,393,731,390,733,396,764,395,777,397,782,377,802,346,830,350,806,372,819,377,843,361,860,365,871,387,942,387,952,399,944,410,884,410,883,440,862,465,862,497,813,496,775,491,771,469,752,459,721,459,719,446,706,438,695,428,701,417,691,391,703,375"
+                      href="USS_html/sci-fi.html"
+                      target="_blank"
+                      alt="Sci-Fi" />
+                <area shape="poly"
+                      coords="727,247,756,235,794,257,911,257,922,270,911,281,834,281,842,287,843,317,856,310,866,317,867,330,380,351,820,340,789,355,782,378,778,378,764,364,733,393,729,390,707,373,691,393,700,417,685,420,678,403,672,398,655,392,648,360,670,322,711,274,723,280,728,278"
+                      href="USS_html/ancient-egypt.html"
+                      target="_blank"
+                      alt="Ancient Egypt" />
+                <area shape="poly"
+                      coords="514,133,536,138,537,151,544,157,554,154,558,158,573,162,580,153,720,153,735,165,738,174,771,188,775,202,789,215,789,226,759,238,755,234,725,247,727,277,711,272,669,322,658,340,646,363,650,379,620,382,588,371,569,339,559,341,497,251,492,235,493,222,508,206,502,204,502,182,513,156"
+                      href="USS_html/the-lost-world.html"
+                      target="_blank"
+                      alt="The Lost World" />
+                <area shape="poly"
+                      coords="461,146,482,153,485,200,491,209,490,217,493,224,491,251,536,318,540,312,559,341,572,394,580,398,584,407,571,430,579,454,548,466,522,450,527,431,395,394,304,394,293,383,303,371,344,372,360,356,357,334,365,322,364,305,369,285,396,248,453,152"
+                      href="USS_html/far-far-away.html"
+                      target="_blank"
+                      alt="Far Far Away" />
+            </map>
+        </div>
+    </section>
+
+    <!--Package section (Can add links to stars to give rating popup [considering to add reviews])--->
+    <section data-aos="fade-up" data-aos-duration="2000" class="package-section" id="package-sect">
+        <div class="title">
+            <h2>Our Packages</h2>
+        </div>
+        <div class="package-content">
+            <div class="box">
+                <a href="USS_html/bookingform.html" target="_blank">
+                    <div class="image-pack">
+                        <img src="images/USS_images/package_image1.jpg" alt="Standard Pack" />
+                    </div>
+                </a>
+                <div class="pack">
+                    <div class="pack-info">
+                        <h4>Standark Pack</h4>
+                        <p>$70</p>
+                    </div>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <a href="USS_html/bookingform.html" target="_blank">
+                    <div class="image-pack">
+                        <img src="images/USS_images/uss-new-york-750-x-422.jpg" alt="Premium Pack" />
+                    </div>
+                </a>
+                <div class="pack">
+                    <div class="pack-info">
+                        <h4>Premium Pack</h4>
+                        <p>$99</p>
+                    </div>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <a href="USS_html/bookingform.html" target="_blank">
+                    <div class="image-pack">
+                        <img src="images/USS_images/uss-hollywood-750-x-422.jpg" alt="Child Pack" />
+                    </div>
+                </a>
+                <div class="pack">
+                    <div class="pack-info">
+                        <h4>Child Pack</h4>
+                        <p>$41</p>
+                    </div>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                        <i class="bx bx-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Newsletter [Usage of Simple Form, planning to add a real booking form either individually or standadised one for group]--->
+    <section class="subscribtion">
+        <div class="subscribe-text">
+            <h2>Sign Up Now!</h2>
+            <p>Sign up to get amazing deals and discounts</p>
+        </div>
+
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </section>
+
+    <!--footer--->
+    <footer id="footer-link"></footer>
+
+    <!--link to js--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/USS_js/map.js"></script>    
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sim Pei Qi" />
+    <meta name="description" content="Tour Booking Form" />
+    <!--River Wonders icon image on title bar-->
+    <link rel="icon" type="image/x-icon" href="../images/Pei Qi/Logo/River Wonders Logo.jpg" />
+    <!--Link to JavaScript, bootstrap and CSS-->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/Pei Qi/headerNfooter-styles.css">
+    <script src="../js/Pei Qi/navbar.js"></script>
+    <script src="../js/Pei Qi/jquery-3.3.1.min.js"></script>
+    <script src="../js/Pei Qi/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/Pei Qi/Booking Form styles.css">
+    <script src="../js/Pei Qi/bookingScript.js" defer></script>
+    <title>Booking Form</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+<body onload="hideTotal()">
+    <!-- header -->
+    <header class="header" id="header">
+        <!-- Navigation -->
+        <div class="navigation">
+            <nav class="nav d-flex">
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/Pei Qi/logo/merlion.png" /></a>
+                </div>
+                <ul class="nav-list d-flex">
+                    <li class="nav-item">
+                        <a href="../River Wonders.html" class="nav-link">Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Pei Qi/Animals.html" class="nav-link">Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Pei Qi/Tour.html" class="nav-link">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Pei Qi/Reviews.html" class="nav-link">Reviews</a>
+                    </li>
+                </ul>
+                <a href="../Pei Qi/Booking Form.html" class="btn sign-up">Book Now!</a>
+            </nav>
+
+        </div>
+    </header>
+    <center>
+        <h2>Ticket Price</h2>
+        <!--Table-->
+        <h5>Ticket Pricing for River Wonders Singapore</h5>
+        <table>
+            <tr>
+                <th bgcolor="#E8B6F8">Resident</th>
+                <td width="150px" bgcolor="#E8B6F8">Local</td>
+                <td width="150px" bgcolor="#E8B6F8">Foreign</td>
+            </tr>
+            <tr>
+                <th bgcolor="#F4E1EF">Adult</th>
+                <td bgcolor="#F4E1EF" width="150px">$36</td>
+                <td bgcolor="#F4E1EF" width="150px">$40</td>
+            </tr>
+            <tr>
+                <th bgcolor="#F4E1EF">Child (Ages 3 to 12)</th>
+                <td bgcolor="#F4E1EF" width="150px">$25.20</td>
+                <td bgcolor="#F4E1EF" width="150px">$28</td>
+            </tr>
+            <tr>
+                <th bgcolor="#F4E1EF">Senior Citizen (Ages above 60)</th>
+                <td bgcolor="#F4E1EF" width="150px">$20</td>
+                <td bgcolor="#F4E1EF" width="150px">Not Available</td>
+            </tr>
+            <tr>
+                <th bgcolor="#E8B6F8">Time</th>
+                <td width="150px" bgcolor="#E8B6F8" colspan="2">10am - 7pm</td>
+            </tr>
+        </table>
+    </center>
+    <p></p>
+    <form id="tourform" onsubmit="calculateTotal(); return false, submitForm(); return false">
+        <center><heading>River Wonders Booking Form</heading></center>
+
+        <fieldset name="Tour Detail">
+            <legend>Tour Detail</legend>
+            <label for="name of tour">Name of Tour:</label>
+            <select name="tour name" required>
+                <option value="">Please select the tour</option>
+                <option value="River Wonders">River Wonders</option>
+            </select>
+            <p>
+                <legend>Local Citizens</legend>
+                <label for="adult-local">Adult:</label>
+                <input type="number" id="adult-local" name="adult-local" min="0" max="10" value="0">
+                <label for="child-local">Child:</label>
+                <input type="number" id="child-local" name="child-local" min="0" max="10" value="0">
+                <label for="senior-local">Senior Citizen:</label>
+                <input type="number" id="senior-local" name="senior-local" min="0" max="10" value="0">
+                <br>
+                <legend>Foreign Citizens</legend>
+                <label for="adult-foreign">Adult:</label>
+                <input type="number" id="adult-foreign" name="adult-foreign" min="0" max="10" value="0">
+                <label for="child-foreign">Child:</label>
+                <input type="number" id="child-foreign" name="child-foreign" min="0" max="10" value="0">
+                <br>
+        </fieldset>
+        <label for="iDate">Date:</label>
+         <input type="date" id="iDate" name="Date" required />
+        <label for="iTime">Time:</label>
+        <input type="time" id="iTime" name="Time" value="10:00" min="10:00" max="19:00" step="900" required />
+        <p>
+            <fieldset name="Customer Detail">
+                <legend>Customer Detail</legend>
+                <p>
+                    <label>Name:</label>
+                    <input id="inputName" name="Name" type="text" placeholder="Enter name" autocomplete="Name" required />
+                    <br /><br />
+                    <label for="iEmail">Email:</label>
+                    <input type="email" id="iEmail" name="Email" size="50" placeholder="Enter email addresses" required />
+                    <br /><br />
+                    <label for="iTelephone">Phone #:</label>
+                    <input type="tel" id="iTelephone" name="Phone" size="8" pattern="[89]\d{7}" required />
+                    <br /><br />
+            </fieldset>
+            <fieldset name="Booking Detail">
+                <legend>Booking Detail</legend>
+                <p id="total-price"></p>
+                <div id="finalMessage"></div>
+            </fieldset>
+            <input type="submit" value="Submit" conclick="submitForm()"/>
+            <input type="reset" value="Reset" onclick="resetForm()"/>
+    </form>
+    <p></p>
+<!--Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6>Opening Hours</h6>
+                        10:00am - 7:00pm
+                        <br />
+                        (Last entry at 6.00pm)
+                        <br />
+                        Open Everyday
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>Address</h6>
+                        80 Mandai Lake Road
+                        <br />
+                        Singapore 729826
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>About Us</h6>
+                        <p>Mandai Wildlife Group is dedicated to caring for the planet and protecting animals and nature.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>Contact Us</h6>
+                        Email: tours@mandai.com
+                        <br />
+                        Phone: +65 6269 3411
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Sim Pei Qi</p>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wong Jia Yi" />
+    <meta name="description" content="Booking Form" />
+    <title>Booking Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/USS_css/bookingform.css" />
+  </head>
+  <body>
+    <form id="booking-form">
+      <h2 class="form-title">Universal Studios Booking Form</h2>
+      <div class="input-group inline">
+        <div class="inline-input">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required />
+        </div>
+        <div class="inline-input">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required />
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="input-group inline">
+        <div class="inline-input" id="code">
+          <label for="country-code">Country Code:</label>
+          <input type="text" id="country-code" placeholder="+65" />
+        </div>
+        <div class="inline-input" id="phone-box">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required />
+        </div>
+      </div>
+      <div class="input-group inline">
+        <div class="inline-input">
+          <label for="package-type">Package Type</label>
+          <select id="package-type" required>
+            <option value="">Select a package</option>
+            <option value="Standard Package">Standard Pack</option>
+            <option value="Premium Package">Premium Pack</option>
+            <option value="Child Package">Child Pack</option>
+          </select>
+        </div>
+        <div class="inline-input">
+          <label for="date">Date</label>
+          <input type="date" id="date" required />
+        </div>
+      </div>
+      <div class="input-group inline">
+        <div class="inline-input">
+          <label for="adults"
+            >Number of Adults ($<span id="adult-price">0</span>)</label
+          >
+          <input
+            type="number"
+            id="adults"
+            min="1"
+            value="1"
+            title="Age 18 and above"
+            required
+          />
+        </div>
+        <div class="inline-input">
+          <label for="childrens"
+            >Number of Children ($<span id="child-price">0</span>)</label
+          >
+          <input
+            type="number"
+            id="childrens"
+            min="0"
+            value="0"
+            title="Age 0 to 17"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="billing-address">Billing Address</label>
+        <textarea id="billing-address" rows="2" cols="50" required></textarea>
+      </div>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    <section id="after-text-container">
+      <div id="after-text">
+        <h2>Details Of Your Booking</h2>
+        <p>Thank you <span id="after-name"></span> for the purchase!</p>
+        <p>Package Selected: <span id="package-selected"></span></p>
+        <p>Date Selected: <span id="date-selected"></span></p>
+        <p>Number of Adults: <span id="adult-selected"></span></p>
+        <p>Number of Childrens: <span id="child-selected"></span></p>
+        <p>Billing Address: <span id="selected-billing"></span></p>
+        <p>Total Price: $<span id="total-price"></span></p>
+        <a href="../Universal_Studios_Singapore.html">
+          <button type="submit" id="return">Return To Home Page</button>
+        </a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/USS_js/bookingform.js"></script>
+  </body>
+</html>

@@ -1,0 +1,329 @@
+﻿* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.background p {
+  background-color: darkblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #221314;
+}
+
+section {
+  padding: 60px 18%;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.text p {
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+.row-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container-box {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #f0eded;
+  padding: 80px 20px;
+  margin: 25px 15px;
+  border-radius: 4px;
+  transition: 1s ease;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*Video Section*/
+.video-uss {
+  padding: 60px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+video {
+  border-radius: 10px;
+}
+
+.video-container {
+  background: url("../../images/USS_images/gradient.jpg");
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.infotext {
+  flex: 1;
+  line-height: 35px;
+  margin-left: 20px;
+}
+
+hr {
+  border: #000 0.1px solid;
+  margin: 15px;
+}
+/*Map Section*/
+a#click {
+  color: #6e54fa;
+}
+
+.map-section {
+  padding: 0px 0px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+#uss-map {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  border: 3px solid #6e54fa;
+  margin-top: 10px;
+}
+
+.package-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.package-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.image-pack {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  will-change: filter;
+  cursor: pointer;
+}
+
+.image-pack img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+
+.image-pack h3 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  color: #fff;
+  top: 36px;
+  right: 40px;
+}
+
+.pack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  pointer-events: none;
+}
+
+.stars i {
+  color: #6e54fa;
+  font-size: 16px;
+}
+
+.pack-info h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pack-info p {
+  font-size: 1.2em;
+  color: #4a5964;
+}
+
+.image-pack:hover {
+  transform: scale(1.1);
+}
+
+.subscribtion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  grid-gap: 3rem;
+  padding: 80px 20px;
+}
+
+.subscribe-text {
+  align-self: flex-start;
+}
+
+.subscribe-text h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.subscribe-text p {
+  font-size: 1.1rem;
+  color: #5a7184;
+  line-height: 30px;
+}
+
+.subscribtion form {
+  max-width: 100%;
+  width: 450px;
+  position: relative;
+}
+
+.subscribtion form input:not(:last-child) {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 150px 20px 30px;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.subscribtion form input:last-child {
+  outline: none;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 15px;
+  background: #6e54fa;
+  color: #fff;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  section {
+    padding: 60px 3%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1040px) {
+  .main {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 960px) {
+  .video-container {
+    flex-direction: column;
+  }
+
+  .infotext {
+    margin-left: 0px;
+  }
+
+  .video-uss {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .infotext {
+    line-height: 20px;
+  }
+
+  #video {
+    max-width: 100%;
+    width: 700px;
+  }
+}
+
+@media (max-width: 711px) {
+  .video-container #video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscribtion form {
+    width: 350px;
+  }
+
+  .subscribtion form input:not(:last-child) {
+    padding: 15px;
+  }
+
+  .subscribe-text {
+    width: 350px;
+  }
+
+  .subscribe-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .subscribe-text p {
+    font-size: 0.9em;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 454px) {
+  .video-container .infotext {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 390px) {
+  .subscribtion form {
+    width: 90vw;
+  }
+
+  .video-container .infotext {
+    font-size: 0.8em;
+  }
+}

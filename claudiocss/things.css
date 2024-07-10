@@ -1,0 +1,131 @@
+﻿.logo {
+    width: 170px;
+    background-size: 100% 100%;
+    height: 67.56410256px;
+    margin-right: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer
+}
+#content {
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: auto;
+    max-width: none;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#phrase {
+    font-family: Chalet Comprime,sans-serif;
+    line-height: 90%;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    padding-left: 40%;
+    font-size: 2.5em;
+}
+#phrase2 {
+    font-family: Chalet Comprime,sans-serif;
+    line-height: 90%;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    padding-left: 28%;
+    font-size: 2.5em;
+}
+#desc {
+    max-width: 820px;
+    margin: 0 auto;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 1;
+    color: black;
+    padding-left: 150px;
+    text-align: center;
+    font-family: Chalet Comprime,sans-serif;
+}
+#desc2 {
+    max-width: 820px;
+    margin: 0 auto;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 1;
+    color: black;
+    padding-left: 70px;
+    text-align: center;
+}
+#space{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section{
+    display: block;
+}
+.contents {
+    width: 100%;
+    max-width: 500px;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+    font-size: 1.125em;
+    text-shadow: 1px 2px 1px #000;
+}
+#circle {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 500px;
+    height: 500px;
+    border-right: 100px;
+    transition: transform 1s;
+    margin-left: 30px;
+}
+#circle:hover{
+    transform: scale(1.04);
+}
+#subheader {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: Chalet Comprime,sans-serif;
+    color: black;
+    opacity: 1;
+    margin-left: 20px;
+}
+#vid {
+    position: relative;
+    left: 250px;
+    border-radius: 30px;
+    margin-top: 78px;
+}
+#foods{
+    padding-left: 150px;
+    font-size: 2em;
+}
+#subheader{
+    margin-top: 200px;
+}
+span{
+    margin-left: -150px;
+}
+#mid{
+    margin-left: -180px;
+}
+#mid2{
+    margin-left: -80px;
+}
+#navigation{
+    background-color: lightgray;
+}
+a {
+    color: #ac8c4c;
+}
+#para{
+    margin-top: 200px;
+}

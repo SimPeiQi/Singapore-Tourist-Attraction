@@ -1,0 +1,23 @@
+﻿body {
+    background-image: url("../images/colour.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-size: calc((2.7 - 1) * 1.2vw + 1rem);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contents{
+   margin-left: 20%;
+}
+#images{
+    float: right;
+}

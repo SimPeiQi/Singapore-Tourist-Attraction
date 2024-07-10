@@ -1,0 +1,154 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+    background-image: url("../../images/Pei Qi/Background/animalsbg.jpg");
+    background-blend-mode: screen;
+    color: black;
+}
+
+img {
+    width: 700px;
+    height: 600px;
+}
+
+.image{
+    width: 400px;
+    height: 300px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    margin:auto;
+    width: 700px;
+    height: 600px;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    font-family: 'Arial', sans-serifl;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.carousel-caption:hover {
+    opacity: 1;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.carousel-inner img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.carousel-control-prev {
+    left: 5%;
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    right: 5%;
+    filter: invert(100%);
+}
+
+.section {
+    display: flex;
+    text-align: left;
+}
+
+.section img {
+   display: block;
+   margin-left: 50px;
+   margin-right: 10px;
+   width:30%;
+   height:30%;
+}
+text{
+    text-align:left;
+}
+
+#CGS {
+    animation: fadeIn 4s;
+}
+#EE {
+    animation: fadeIn 4s;
+}
+#GFS {
+    animation: fadeIn 4s;
+}
+#GP {
+    animation: fadeIn 4s;
+}
+#GRO {
+    animation: fadeIn 4s;
+}
+#GT {
+    animation: fadeIn 4s;
+}
+#GA {
+    animation: fadeIn 4s;
+}
+#IG {
+    animation: fadeIn 4s;
+}
+#M {
+    animation: fadeIn 4s;
+}
+#MGC {
+    animation: fadeIn 4s;
+}
+#RBP {
+    animation: fadeIn 4s;
+}
+#RP {
+    animation: fadeIn 4s;
+}
+#S {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    background-color: #7BACEB;
+    color: #2843EE;
+}
+.bgcolor {
+    text-align: center;
+    background-color: #EFF28E;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+    background-color: #7BACEB;
+    color: #2843EE;
+    padding:0;
+    margin:0;
+}
+
+a {
+    color: #0F36E8;
+}
+
+mark {
+    background-color: darkcyan;
+    font-weight: bold;
+}

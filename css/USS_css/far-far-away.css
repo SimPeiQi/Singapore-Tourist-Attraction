@@ -1,0 +1,437 @@
+﻿* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Princess Sofia", cursive, sans-serif;
+  background: #fff;
+  color: #221314;
+}
+
+section {
+  padding: 80px 18%;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.text .lets-explore {
+  color: #ffd700;
+}
+
+.text .details {
+  color: #cc5500;
+}
+
+#information {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  padding-top: 80px;
+}
+
+#information .text {
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+  margin: 0;
+  padding: 60px;
+  background-color: #232b2b;
+  width: 50%;
+}
+
+#information .text h2 {
+  font-size: 3em;
+  color: #228b22;
+}
+
+#information .text p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.container figure {
+  margin: 0;
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../images/USS_images/far_far_away_image7.jpg);
+  border-radius: 0 20px 20px 0;
+}
+
+.row-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container-box {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #f0eded;
+  padding: 80px 20px;
+  margin: 25px 15px;
+  border-radius: 4px;
+  transition: 1s ease;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-box:nth-child(1) {
+  background: url(../../images/USS_images/far_far_away_image1.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(2) {
+  background: url(../../images/USS_images/far_far_away_image2.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(3) {
+  background: url(../../images/USS_images/far_far_away_image3.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(4) {
+  background: url(../../images/USS_images/far_far_away_image4.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(5) {
+  background: url(../../images/USS_images/far_far_away_image5.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(6) {
+  background: url(../../images/USS_images/far_far_away_image6.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.container-box:nth-child(1):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image1.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:nth-child(2):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image2.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:nth-child(3):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image3.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:nth-child(4):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image4.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:nth-child(5):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image5.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:nth-child(6):hover {
+  background: rgba(0, 0, 0, 0.7)
+    url(../../images/USS_images/far_far_away_image6.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.container-box:hover h4 {
+  color: #ffb6c1;
+  transition: 0.5s ease;
+}
+
+.container-box:hover p {
+  color: #87ceeb;
+  transition: 0.5s ease;
+}
+
+.container-box h4 {
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 1;
+  color: transparent;
+  transition: 0.5s ease;
+}
+
+.container-box p {
+  font-size: 1.3em;
+  color: transparent;
+  opacity: 1;
+}
+
+.container-box:hover {
+  box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+  border: 1px solid transparent;
+  transform: translateY(-3px);
+  transition: 0.5s ease;
+}
+
+.far-far-away-text {
+  color: #ffb6c1;
+  text-shadow: 3px 3px #000;
+  font-size: 0.8em;
+  transition: ease 1s;
+}
+
+.return-arrow {
+  background-color: #4b0082;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.return-arrow span {
+  transition: color 0.3s ease-in-out;
+}
+
+.return-arrow:hover span {
+  color: #228b22;
+}
+
+.return-arrow i {
+  position: absolute;
+  color: #ffd700;
+  left: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease-in-out;
+}
+
+.return-arrow:hover i {
+  color: #228b22;
+}
+
+.return-text {
+  font-family: "Princess Sofia", cursive, sans-serif;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.table-container th h1 {
+  font-size: 1.5em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.table-container td {
+  font-size: 1.2em;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.table-container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 80px auto;
+}
+
+.table-container td,
+.table-container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+/* Background-color of the odd rows */
+.table-container tr:nth-child(odd) {
+  background-color: #4b0082;
+  color: #21ce21;
+  transition: all 0.5s linear;
+}
+/* Background-color of the even rows */
+.table-container tr:nth-child(even) {
+  background-color: #21ce21;
+  color: #4b0082;
+  transition: all 0.5s linear;
+}
+
+.table-container th {
+  background-color: #cc5500;
+}
+
+.table-container tr:hover {
+  background-color: #ffd700;
+}
+
+.table-container td:hover {
+  background-color: #ffb6c1;
+  transition: all 0.5s linear;
+}
+/* pop-up */
+.pop-up {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10;
+  background-color: #ffffff;
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+.pop-up .container {
+  padding: 70px 0px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.pop-up .close {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  font-size: 1.4rem;
+  color: #3e4146;
+  transition: all 0.4s;
+}
+
+.pop-up .title h1 {
+  text-align: center;
+  color: #4b0082;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.9rem;
+  letter-spacing: 0.05rem;
+}
+
+.pop-up .title p {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pop-up.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 1600px) {
+  section {
+    padding: 60px 3%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1040px) {
+  .main {
+    justify-content: flex-start;
+  }
+
+  #information .text {
+    width: 100%;
+    color: #fff;
+    border-radius: 20px;
+    margin: 0;
+    padding: 60px;
+    background-color: #232b2b;
+  }
+
+  #information figure {
+    display: none;
+    width: 0%;
+  }
+}
+
+@media (max-width: 850px) {
+  .table-container td:nth-child(4),
+  .table-container th:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .pop-up .container {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .table-container td:nth-child(3),
+  .table-container th:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  #information .text h2 {
+    font-size: 2em;
+  }
+
+  #information .text p {
+    font-size: 1.1em;
+  }
+
+  .pop-up .title h1 {
+    font-size: 1.4em;
+  }
+
+  .pop-up .title p {
+    font-size: 1.1em;
+  }
+
+  .table-container td {
+    font-size: 1em;
+  }
+}

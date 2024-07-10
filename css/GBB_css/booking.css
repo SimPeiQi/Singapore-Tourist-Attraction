@@ -1,0 +1,192 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #fec107;
+    padding: 0 10px;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    background: white;
+}
+
+    .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+@media (max-width: 500px) {
+    .content-table thead {
+        display: none;
+    }
+
+    .content-table,
+    .content-table tbody,
+    .content-table tr,
+    .content-table td {
+        display: block;
+        width: 100%;
+    }
+
+        .content-table tr {
+            margin-bottom: 15px;
+        }
+
+        .content-table td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+
+            .content-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: left;
+            }
+}
+
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+    .wrapper .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #fec107;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .wrapper form {
+        width: 100%;
+    }
+
+        .wrapper form .input_field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+            .wrapper form .input_field label {
+                width: 200px;
+                color: #757575;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .wrapper form .input_field .input {
+                width: 100%;
+                outline: none;
+                border: 1px solid #d5dbd9;
+                font-size: 15px;
+                padding: 8px 10px;
+                border-radius: 3px;
+                transition: all 0.3s ease;
+            }
+
+            .wrapper form .input_field .custom_select {
+                position: relative;
+                width: 100%;
+                height: 37px;
+            }
+
+                .wrapper form .input_field .custom_select select {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    border: 1px solid #d5dbd9;
+                    width: 100%;
+                    height: 100%;
+                    padding: 8px 10px;
+                    border-radius: 3px;
+                    outline: none;
+                }
+
+                .wrapper form .input_field .custom_select:before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    right: 10px;
+                    border: 8px solid;
+                    border-color: #d5dbd9 transparent transparent transparent;
+                    pointer-events: none;
+                }
+
+            .wrapper form .input_field .input:focus,
+            .wrapper form .input_field select:focus {
+                border: 1px solid #fec107;
+            }
+
+            .wrapper form .input_field button {
+                width: 100%;
+                padding: 8px 10px;
+                font-size: 15px;
+                border: 0;
+                background: #fec107;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 3px;
+                outline: none;
+            }
+
+            .wrapper form .input_field:last-child {
+                margin-bottom: 0;
+            }
+
+            .wrapper form .input_field button:hover {
+                background: #ffd658;
+            }
+
+@media (max-width: 420px) {
+    .wrapper form .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .wrapper form .input_field label {
+            margin-bottom: 5px;
+        }
+}

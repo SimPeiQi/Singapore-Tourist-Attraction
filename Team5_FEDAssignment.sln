@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F43A3261-655D-49A2-BAEB-444679F0A056}"
+	ProjectSection(SolutionItems) = preProject
+		homepage-footer.html = homepage-footer.html
+		homepage-header.html = homepage-header.html
+		homepage.html = homepage.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{BFEFF306-3C61-4CD6-855A-6E4C830DEF07}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\avatar.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\avatar.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\canyon.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\canyon.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\cloudforest.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\cloudforest.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\dahlia.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\dahlia.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\floral.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\floral.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\flowerdome.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\flowerdome.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\home.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\home.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\lake.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\lake.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\pavilion.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\pavilion.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\plants.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\plants.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\pod.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\pod.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\serene.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\serene.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\skywalk.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\skywalk.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\snapshot.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\snapshot.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\supertree.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\supertree.jpg
+		..\..\..\..\Downloads\FED Assignment\FED Assignment\img\wetlands.jpg = ..\..\..\..\Downloads\FED Assignment\FED Assignment\img\wetlands.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{22C768F8-F448-41DD-9395-A28E1251F44C}"
+	ProjectSection(SolutionItems) = preProject
+		styles.css = styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{08A9EDC1-4367-4DE9-A998-364491169656}"
+	ProjectSection(SolutionItems) = preProject
+		script.js = script.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFEFF306-3C61-4CD6-855A-6E4C830DEF07} = {F43A3261-655D-49A2-BAEB-444679F0A056}
+		{22C768F8-F448-41DD-9395-A28E1251F44C} = {F43A3261-655D-49A2-BAEB-444679F0A056}
+		{08A9EDC1-4367-4DE9-A998-364491169656} = {F43A3261-655D-49A2-BAEB-444679F0A056}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71128B76-6525-4C95-99F5-C9EC3C3694E6}
+	EndGlobalSection
+EndGlobal

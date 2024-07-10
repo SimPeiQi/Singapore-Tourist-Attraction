@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sherwyn" />
+    <meta name="description" content="Booking form" />
+    <title>Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="css/GBB_css/booking.css" />
+</head>
+<body>
+    <header>
+        <a href="GBB.html" class="logo"><h1>< Nature</h1></a>
+    </header>
+
+    <h2>Opening & Closing Hours</h2>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Attraction</th>
+                <th>Details</th>
+                <th>Opening</th>
+                <th>Closing</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td data-label="Attraction">Supertree Observatory</td>
+                <td data-label="Details">Daily. <br /> Last admission - 8.30pm.</td>
+                <td data-label="Opening">9.00am</td>
+                <td data-label="Closing">9.00pm</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">OCBC Skyway</td>
+                <td data-label="Details">Daily. <br /> Last admission - 8.30pm.</td>
+                <td data-label="Opening">9.00am</td>
+                <td data-label="Closing">9.00pm</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Cloud Forest</td>
+                <td data-label="Details">Daily. <br /> Last Admission - 8.00pm.</td>
+                <td data-label="Opening">9.00am</td>
+                <td data-label="Closing">9.00pm</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Flower Dome</td>
+                <td data-label="Details">Daily. <br /> Last Admission - 8.30pm.</td>
+                <td data-label="Opening">9.00am</td>
+                <td data-label="Closing">9.00pm</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Floral Fantasy</td>
+                <td data-label="Details">Mon - Fri. <br /> Last Admission - 6.30pm. <br /><br /> Sat, Sun & PH. <br /> Last admission - 7.30pm.</td>
+                <td data-label="Opening">10.00am <br /><br /><br /> 10.00am</td>
+                <td data-label="Closing">7.00pm <br /><br /><br /> 8.00pm</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Active Garden</td>
+                <td data-label="Details">Daily.</td>
+                <td data-label="Opening">5.00am</td>
+                <td data-label="Closing">2.00am</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Bay East Garden</td>
+                <td data-label="Details">Daily.</td>
+                <td data-label="Opening">24 hours</td>
+                <td data-label="Closing">NA</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Kingfisher Wetlands</td>
+                <td data-label="Details">Daily.</td>
+                <td data-label="Opening">5.00am</td>
+                <td data-label="Closing">2.00am</td>
+            </tr>
+
+            <tr>
+                <td data-label="Attraction">Outdoor Gardens</td>
+                <td data-label="Details">Daily.</td>
+                <td data-label="Opening">5.00am</td>
+                <td data-label="Closing">2.00am</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="wrapper">
+        <div class="title">Ticket Order Form</div>
+        <form action="/action_page.php">
+            <div class="input_field">
+                <label>Attraction:</label>
+                <div class="custom_select">
+                    <select required>
+                        <option value="select">Please select...</option>
+                        <option value="supertree">Supertree Observatory</option>
+                        <option value="skyway">OCBC Skyway</option>
+                        <option value="forest">Cloud Forest</option>
+                        <option value="flower">Flower Dome</option>
+                        <option value="fantasy">Floral Fantasy</option>
+                        <option value="garden">Active Garden</option>
+                        <option value="eastbay">Bay East Garden</option>
+                        <option value="kingfisher">Kingfisher Wetlands</option>
+                        <option value="outdoor">Outdoor Gardens</option>
+                    </select>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <label for="qty">Quantity:</label>
+                <input type="number" class="input" min="1" value="1">
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <label>Residency:</label>
+                <input type="radio" class="input" required>
+                <label for="small">Non-Resident</label>
+                <input type="radio" class="input">
+                <label for="medium">Singapore Resident</label>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <label for="name">Name:</label>
+                <input type="text" class="input" autocomplete="on" required>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <label for="phone">Phone:</label>
+                <input type="tel" class="input" pattern="[6,8,9]{1}[0-9]{7}" required>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <label for="email">Email:</label>
+                <input type="email" class="input" placeholder="Enter email address" required>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <button type="submit">Submit</button>
+            </div>
+
+            <br />
+
+            <div class="input_field">
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
